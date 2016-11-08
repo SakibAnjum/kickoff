@@ -1,0 +1,418 @@
+
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;width:100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+#wrapper.wrapper {
+  height: 100%;
+  position: relative;
+}
+.main-area {
+  height: 100%;
+}
+.section{
+  padding: 60px 0;
+}
+.text-white{
+  color:#fff;
+}
+/*----------------------------------------*/
+/*  1.  header CSS
+/*----------------------------------------*/
+.header {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  left: 0;
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header .logo{}
+.header .logo a{}
+.header .logo a img{}
+.header .col-wrapper{}
+  .header .col-wrapper .header-menu {
+    float: right;
+  }
+.header .col-wrapper .header-menu .main-nav{}
+.header .col-wrapper .header-menu .main-nav ul{}
+.header .col-wrapper .header-menu .main-nav ul li {
+  display: inline-block;
+  line-height: 42px;
+}
+.header .col-wrapper .header-menu .main-nav ul li a {
+  color: #2c3c50;
+  display: inline-block;
+  padding: 0 15px;
+}
+.header .col-wrapper .header-action {
+  float: right;
+  line-height: 42px;
+  padding-left: 30px;
+}
+.header .col-wrapper .header-action .header-cart {display: inline-block}
+.header .col-wrapper .header-action .header-cart a {
+  color: #2c3c50;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 6px;
+  position: relative;
+}
+.header .col-wrapper .header-action .header-cart a::before {
+  background: #f39c12 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: attr(cart-count);
+  font-size: 10px;
+  height: 16px;
+  line-height: 17px;
+  position: absolute;
+  right: 2px;
+  text-align: center;
+  top: 3px;
+  width: 16px;
+}
+.header .col-wrapper .header-action .header-search {
+  color: #2c3c50;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 6px;
+}
+/*----------------------------------------*/
+/*  1.  slider CSS
+/*----------------------------------------*/
+.slider-area {
+  border-bottom: 4px solid #f39c12;
+  width: 100%;
+}
+.slider-area.background-image{
+  background: rgba(0, 0, 0, 0) url("img/bg.jpg") repeat scroll center center / cover ;
+  position: relative;
+}
+.slider-area.background-image::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  opacity: .8
+}
+.slider-area .slider-wrapper{}
+.slider-area .slider-wrapper .item {
+  padding-top: 75px;
+  width: 100%;
+}
+.slider-area .slider-wrapper .item .slider-content {
+  margin-top: 50%;
+}
+.slider-area .slider-wrapper .item .slider-content h3 {
+  color: #2c3c50;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.slider-area .slider-wrapper .item .slider-content h2 {
+  color: #2c3c50;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+.slider-area .slider-wrapper .item .slider-content p {
+  color: #2c3c50;
+  font-size: 16px;
+}
+.slider-area .slider-wrapper .item .slider-image {}
+.slider-area .slider-wrapper  .item .slider-image img{}
+
+  .slider-area .owl-carousel .owl-prev,.slider-area .owl-carousel  .owl-next {
+    background: rgba(44, 60, 80, 0.7) none repeat scroll 0 0;
+    color: #fff;
+    font-size: 30px;
+    height: 80px;
+    left: 0;
+    line-height: 80px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80px;
+    transition: .4s
+  }
+
+  .slider-area .owl-carousel .owl-next {
+    left: auto;
+    right: 0;
+  }
+  .slider-area .owl-carousel .owl-prev:hover,.slider-area .owl-carousel .owl-next:hover{
+    background: rgba(44, 60, 80, 1) none repeat scroll 0 0;
+  }
+
+.slider-area .slider-btn-area{}
+.intro-btn {
+  color: #2c3c50;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 9999
+}
+.intro-btn::after {
+  border: 1px solid #2c3c50;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: .4s;
+  z-index: -1
+}
+.intro-btn:hover:after{
+    top:10px;
+    left: 10px;
+}
+.intro-btn:hover{
+  background: #2c3c50;
+  color: #fff;
+}
+.gray-bg{
+  background: #F2F2F2
+}
+/*----------------------------------------*/
+/*  1.  info CSS
+/*----------------------------------------*/
+.info-box {
+  border-radius: 6px;
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+}
+.info-box .image-bg{}
+  .info-box .box-content {
+    background: #f39c12 none repeat scroll 0 0;
+    bottom: 60px;
+    color: #fff;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+  }
+  .info-box .box-content .title {
+    position: relative;
+  }
+  .info-box .box-content .title h3 {
+    font-size: 18px
+  }
+  .info-box .box-content .title .icon {
+    background: #f39c12 none repeat scroll 0 0;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -46px;
+    width: 60px;
+    z-index: 99999;
+  }
+.info-box .box-content .title .icon i{}
+  .info-box .box-content p {
+    cursor: default;
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.4s ease 0.4s;
+  }
+.info-box:hover .title .icon i{
+  transform: rotate(360deg);
+  transition: .4s;
+  display: inline-block;
+}
+.info-box:hover .box-content p{
+  height: 50px;
+  opacity: 1
+}
+
+/*----------------------------------------*/
+/*  1.  info CSS
+/*----------------------------------------*/
+.section-title {
+  padding-bottom: 75px;
+}
+.section-title h2 {
+  position: relative;
+}
+.section-title h2::before {
+  background: #f39c12 none repeat scroll 0 0;
+  bottom: -22px;
+  content: "";
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.section-title h2::after {
+  background: #2c3c50 none repeat scroll 0 0;
+  bottom: -22px;
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+.text-white .section-title h2::after{
+  background: #fff;
+}
+.section:hover .section-title h2::after{
+  opacity: 0;
+}
+.section:hover .section-title h2::before{
+  opacity: 1;
+}
+.single-service{
+  margin-bottom: 30px;
+}
+.single-service .service-icon {
+  border: 2px solid;
+  border-radius: 4px;
+  color: #2c3c50;
+  float: left;
+  font-size: 38px;
+  height: 70px;
+  line-height: 65px;
+  text-align: center;
+  width: 70px;
+}
+.single-service .service-icon i{}
+.single-service .service-content {
+  margin-left: 90px;
+  overflow: hidden;
+}
+.single-service .service-content h3 {
+  color: #2c3c50;
+  font-size: 18px;
+  line-height: 22px;
+}
+.single-service .service-content p{}
+
+  /*----------------------------------------*/
+  /*  1.  call to action CSS
+  /*----------------------------------------*/
+  .cltoactn-wrapper .btn-area {
+    margin: 30px 0;
+  }
+  .cltoactn-wrapper .btn-area a{
+
+  }
+  .cltoactn-wrapper .intro-btn::after {
+    border: 1px solid #fff;
+  }
+    .cltoactn-wrapper .intro-btn {
+    color: #fff;
+  }
+  .cltoactn-wrapper  .intro-btn:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #2c3c50;
+  }
+  /*----------------------------------------*/
+  /*  1.  call to action CSS
+  /*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.owl-carousel .owl-item .item .animated{
+  display: none
+}
+
+.owl-carousel .owl-item.active .item .animated{
+  display: block !important;
+}
+
+
+@keyframes xzo {
+  from {
+    opacity: 1;
+      -webkit-transform: translateY(-500px);
+      transform: translateY(-500px);
+  }
+  to{
+    opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
