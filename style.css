@@ -64,6 +64,23 @@ body {
 .text-white{
   color:#fff;
 }
+
+.margin-top-5px{margin-top: 5px}
+.margin-top-10px{margin-top: 10px}
+.margin-top-15px{margin-top: 15px}
+.margin-top-20px{margin-top: 20px}
+.margin-top-25px{margin-top: 25px}
+.margin-top-30px{margin-top: 30px}
+.margin-top-35px{margin-top: 35px}
+.margin-top-40px{margin-top: 40px}
+.margin-top-50px{margin-top: 50px}
+.margin-top-55px{margin-top: 55px}
+.margin-top-60px{margin-top: 60px}
+.margin-top-60px{margin-top: 60px}
+.margin-top-65px{margin-top: 65px}
+.margin-top-70px{margin-top: 70px}
+.margin-top-75px{margin-top: 75px}
+
 /*----------------------------------------*/
 /*  1.  header CSS
 /*----------------------------------------*/
@@ -77,9 +94,11 @@ body {
   width: 100%;
   z-index: 99;
 }
-.header .logo{}
+.header .logo {
+  line-height: 42px;
+}
 .header .logo a{}
-.header .logo a img{}
+.header .logo a img {}
 .header .col-wrapper{}
   .header .col-wrapper .header-menu {
     float: right;
@@ -94,6 +113,7 @@ body {
   color: #2c3c50;
   display: inline-block;
   padding: 0 15px;
+  text-transform: capitalize;
 }
 .header .col-wrapper .header-action {
   float: right;
@@ -154,21 +174,25 @@ body {
   width: 100%;
 }
 .slider-area .slider-wrapper .item .slider-content {
-  margin-top: 50%;
+  margin-top: 52%;
+  transform: translateY(-50%);
 }
 .slider-area .slider-wrapper .item .slider-content h3 {
   color: #2c3c50;
   font-size: 28px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .slider-area .slider-wrapper .item .slider-content h2 {
   color: #2c3c50;
-  font-size: 46px;
+  font-size: 48px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .slider-area .slider-wrapper .item .slider-content p {
   color: #2c3c50;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 }
 .slider-area .slider-wrapper .item .slider-image {}
 .slider-area .slider-wrapper  .item .slider-image img{}
@@ -207,15 +231,15 @@ body {
   z-index: 9999
 }
 .intro-btn::after {
-  border: 1px solid #2c3c50;
+  border: 2px solid #2c3c50;
   content: "";
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
+  transition: all 0.4s ease 0s;
   width: 100%;
-  transition: .4s;
-  z-index: -1
+  z-index: -1;
 }
 .intro-btn:hover:after{
     top:10px;
@@ -224,6 +248,9 @@ body {
 .intro-btn:hover{
   background: #2c3c50;
   color: #fff;
+}
+.slider-area .intro-btn{
+  font-weight: 600
 }
 .gray-bg{
   background: #F2F2F2
@@ -288,14 +315,20 @@ body {
 /*  1.  info CSS
 /*----------------------------------------*/
 .section-title {
-  padding-bottom: 75px;
 }
 .section-title h2 {
+  display: inline-block;
   position: relative;
+  text-transform: uppercase;
 }
+.section-title p {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/*
 .section-title h2::before {
   background: #f39c12 none repeat scroll 0 0;
-  bottom: -22px;
+  bottom: -15px;
   content: "";
   height: 2px;
   left: 0;
@@ -305,7 +338,7 @@ body {
 }
 .section-title h2::after {
   background: #2c3c50 none repeat scroll 0 0;
-  bottom: -22px;
+  bottom: -15px;
   content: "";
   height: 1px;
   left: 0;
@@ -322,6 +355,8 @@ body {
 .section:hover .section-title h2::before{
   opacity: 1;
 }
+
+*/
 .single-service{
   margin-bottom: 30px;
 }
@@ -351,28 +386,131 @@ body {
   /*----------------------------------------*/
   /*  1.  call to action CSS
   /*----------------------------------------*/
-  .cltoactn-wrapper .btn-area {
-    margin: 30px 0;
-  }
-  .cltoactn-wrapper .btn-area a{
+.cltoactn-wrapper .btn-area {
+  margin: 30px 0 0;
+}
+.cltoactn-wrapper .btn-area a{
 
-  }
-  .cltoactn-wrapper .intro-btn::after {
-    border: 1px solid #fff;
-  }
-    .cltoactn-wrapper .intro-btn {
-    color: #fff;
-  }
-  .cltoactn-wrapper  .intro-btn:hover {
-    background: #fff none repeat scroll 0 0;
-    color: #2c3c50;
-  }
+}
+.cltoactn-wrapper .intro-btn::after {
+  border: 1px solid #fff;
+}
+  .cltoactn-wrapper .intro-btn {
+  color: #fff;
+}
+.cltoactn-wrapper  .intro-btn:hover {
+  background: #fff none repeat scroll 0 0;
+  color: #2c3c50;
+}
   /*----------------------------------------*/
   /*  1.  call to action CSS
   /*----------------------------------------*/
 
-
-
+.single-post{}
+.single-post .post-thumb{}
+.single-post .post-thumb a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.single-post .post-thumb a::before {
+  background: #f39c12 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  width: 50%;
+  z-index: 99;
+  transition: .3s
+}
+.single-post .post-thumb a::after {
+  background: #2c3c50 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: -50%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  transition: .3s
+}
+.single-post .post-thumb a .link-icon {
+  border: 2px solid;
+  border-radius: 50%;
+  bottom: 0;
+  color: peru;
+  font-size: 28px;
+  height: 60px;
+  left: 0;
+  line-height: 60px;
+  margin: auto;
+  mix-blend-mode: difference;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+  z-index: 999999;
+  opacity: 0;
+}
+.single-post .post-thumb a:hover .link-icon {
+  opacity: 1;
+  transition: .4s ease .5s;
+}
+.single-post .post-thumb a:hover:before{
+  right: 0;
+}
+.single-post .post-thumb a:hover:after{
+  left: 0;
+}
+.single-post .post-thumb a img{}
+.single-post .post-content{}
+.single-post .post-content h3 {
+  font-size: 18px;
+  margin: 15px 0 0;
+}
+.single-post .post-content h3 a {
+  color: #2c3c50;
+}
+.single-post .post-content h3 a:hover{
+  color: #fc9c12
+}
+.single-post .post-meta {
+  border-top: 1px solid #b3b3b3;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+.single-post .post-meta div {
+  display: inline-block;
+}
+.single-post .post-meta div span{}
+.single-post .post-meta div.date{}
+.single-post .post-meta div.author {
+  margin-left: 35px;
+  position: relative;
+}
+.single-post .post-meta div.author::before {
+  background: #b3b3b3 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: -18px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+.view-all-btn {
+  border: 2px solid #2c3c50;
+  color: #2c3c50;
+  display: inline-block;
+  font-weight: 600;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
 
 
 
