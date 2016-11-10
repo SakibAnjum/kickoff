@@ -1,26 +1,6 @@
 (function ($) {
  "use strict";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------
  jQuery MeanMenu
 ------------------------------ */
@@ -29,16 +9,14 @@
 /*----------------------------
  wow js active
 ------------------------------ */
-var wow = new WOW(
-                     {
-                     boxClass:     'wow',      // default
-                     animateClass: 'animatedd', // default
-                     offset:       0,          // default
-                     mobile:       true,       // default
-                     live:         true        // default
-                   }
-                   )
-                   wow.init();
+var wow = new WOW({
+       boxClass:     'wow',
+       animateClass: 'animatedd',
+       offset:       0,
+       mobile:       true,
+       live:         true
+     })
+  wow.init();
 
 /*----------------------------
  owl active
@@ -56,24 +34,8 @@ $('.owl-carousel').owlCarousel({
 
 })
 
-/*----------------------------
- price-slider active
------------------------------- */
-	  $( "#slider-range" ).slider({
-	   range: true,
-	   min: 40,
-	   max: 600,
-	   values: [ 60, 570 ],
-	   slide: function( event, ui ) {
-		$( "#amount" ).val( "�" + ui.values[ 0 ] + " - �" + ui.values[ 1 ] );
-	   }
-	  });
-	  $( "#amount" ).val( "�" + $( "#slider-range" ).slider( "values", 0 ) +
-	   " - �" + $( "#slider-range" ).slider( "values", 1 ) );
 
-/*--------------------------
- scrollUp
----------------------------- */
+
 	$.scrollUp({
         scrollText: '<i class="fa fa-angle-up"></i>',
         easingType: 'linear',

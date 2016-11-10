@@ -1,7 +1,7 @@
 
 
 /*----------------------------------------*/
-/*  1.  Theme default CSS
+/*      Theme default CSS
 /*----------------------------------------*/
 html, body {height: 100%;width:100%;}
 .floatleft {float:left}
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {transition: all 0.3s ease 0s;text-decoration:none;}
 a:hover {
-  color: #ec4445;
+  color: #fc9c12;
   text-decoration: none;
 }
 a:active, a:hover {
@@ -80,9 +80,11 @@ body {
 .margin-top-65px{margin-top: 65px}
 .margin-top-70px{margin-top: 70px}
 .margin-top-75px{margin-top: 75px}
-
+.no-padding{
+  padding: 0;
+}
 /*----------------------------------------*/
-/*  1.  header CSS
+/*      header CSS
 /*----------------------------------------*/
 .header {
   background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
@@ -148,7 +150,7 @@ body {
   padding: 0 6px;
 }
 /*----------------------------------------*/
-/*  1.  slider CSS
+/*      slider CSS
 /*----------------------------------------*/
 .slider-area {
   border-bottom: 4px solid #f39c12;
@@ -179,20 +181,23 @@ body {
 }
 .slider-area .slider-wrapper .item .slider-content h3 {
   color: #2c3c50;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .slider-area .slider-wrapper .item .slider-content h2 {
   color: #2c3c50;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 600;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .slider-area .slider-wrapper .item .slider-content p {
   color: #2c3c50;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 .slider-area .slider-wrapper .item .slider-image {}
 .slider-area .slider-wrapper  .item .slider-image img{}
@@ -256,7 +261,7 @@ body {
   background: #F2F2F2
 }
 /*----------------------------------------*/
-/*  1.  info CSS
+/*      info CSS
 /*----------------------------------------*/
 .info-box {
   border-radius: 6px;
@@ -312,7 +317,7 @@ body {
 }
 
 /*----------------------------------------*/
-/*  1.  info CSS
+/*     info CSS
 /*----------------------------------------*/
 .section-title {
 }
@@ -384,7 +389,7 @@ body {
 .single-service .service-content p{}
 
   /*----------------------------------------*/
-  /*  1.  call to action CSS
+  /*     call to action CSS
   /*----------------------------------------*/
 .cltoactn-wrapper .btn-area {
   margin: 30px 0 0;
@@ -393,7 +398,7 @@ body {
 
 }
 .cltoactn-wrapper .intro-btn::after {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
   .cltoactn-wrapper .intro-btn {
   color: #fff;
@@ -402,8 +407,12 @@ body {
   background: #fff none repeat scroll 0 0;
   color: #2c3c50;
 }
+.video-popup-btn {
+  color: #fff;
+  font-size: 60px;
+}
   /*----------------------------------------*/
-  /*  1.  call to action CSS
+  /*     blog CSS
   /*----------------------------------------*/
 
 .single-post{}
@@ -530,27 +539,10 @@ body {
 
 
 
-
-
-
 .owl-carousel .owl-item .item .animated{
   display: none
 }
 
 .owl-carousel .owl-item.active .item .animated{
   display: block !important;
-}
-
-
-@keyframes xzo {
-  from {
-    opacity: 1;
-      -webkit-transform: translateY(-500px);
-      transform: translateY(-500px);
-  }
-  to{
-    opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-  }
 }
