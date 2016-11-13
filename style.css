@@ -121,6 +121,16 @@ body {
   float: right;
   line-height: 42px;
   padding-left: 30px;
+  position: relative;
+}
+.header .col-wrapper .header-action::before {
+  background: #ddd none repeat scroll 0 0;
+  content: "";
+  height: 25px;
+  left: 13px;
+  position: absolute;
+  top: 6px;
+  width: 1px;
 }
 .header .col-wrapper .header-action .header-cart {display: inline-block}
 .header .col-wrapper .header-action .header-cart a {
@@ -149,11 +159,16 @@ body {
   display: inline-block;
   padding: 0 6px;
 }
+.is-sticky .header{
+  z-index: 9999999999!important;
+  background: #ffff;
+  transition: .4s;
+  padding: 10px 0;
+}
 /*----------------------------------------*/
 /*      slider CSS
 /*----------------------------------------*/
 .slider-area {
-  border-bottom: 4px solid #f39c12;
   width: 100%;
 }
 .slider-area.background-image{
@@ -259,6 +274,12 @@ body {
 }
 .gray-bg{
   background: #F2F2F2
+}
+/*----------------------------------------*/
+/*      client-logo  CSS
+/*----------------------------------------*/
+.client-logo {
+  background: #e8e8e8 none repeat scroll 0 0;
 }
 /*----------------------------------------*/
 /*      info CSS
