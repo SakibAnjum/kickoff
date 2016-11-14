@@ -59,7 +59,7 @@ body {
   height: 100%;
 }
 .section{
-  padding: 60px 0;
+  padding: 80px 0;
 }
 .text-white{
   color:#fff;
@@ -80,9 +80,20 @@ body {
 .margin-top-65px{margin-top: 65px}
 .margin-top-70px{margin-top: 70px}
 .margin-top-75px{margin-top: 75px}
+.margin-top-80px{margin-top: 80px}
 .no-padding{
   padding: 0;
 }
+.padding-bottom-0px{
+  padding-bottom: 0px!important
+}
+.flex-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-flow:  row wrap;
+
+}
+
 /*----------------------------------------*/
 /*      header CSS
 /*----------------------------------------*/
@@ -95,6 +106,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 99;
+  transition: .4s
 }
 .header .logo {
   line-height: 42px;
@@ -165,13 +177,16 @@ body {
   transition: .4s;
   padding: 10px 0;
 }
+.sticky-wrapper {
+  height: auto !important;
+}
 /*----------------------------------------*/
 /*      slider CSS
 /*----------------------------------------*/
 .slider-area {
   width: 100%;
 }
-.slider-area.background-image{
+.background-image{
   background: rgba(0, 0, 0, 0) url("img/bg.jpg") repeat scroll center center / cover ;
   position: relative;
 }
@@ -186,14 +201,14 @@ body {
   opacity: .8
 }
 .slider-area .slider-wrapper{}
-.slider-area .slider-wrapper .item {
-  padding-top: 75px;
-  width: 100%;
-}
-.slider-area .slider-wrapper .item .slider-content {
-  margin-top: 52%;
-  transform: translateY(-50%);
-}
+  .slider-area .slider-wrapper .item {
+    height: 580px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .slider-area .slider-wrapper .item .slider-content {
+    padding-top: 95px;
+  }
 .slider-area .slider-wrapper .item .slider-content h3 {
   color: #2c3c50;
   font-size: 20px;
@@ -203,16 +218,15 @@ body {
 }
 .slider-area .slider-wrapper .item .slider-content h2 {
   color: #2c3c50;
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 600;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .slider-area .slider-wrapper .item .slider-content p {
   color: #2c3c50;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .slider-area .slider-wrapper .item .slider-image {}
 .slider-area .slider-wrapper  .item .slider-image img{}
@@ -274,6 +288,10 @@ body {
 }
 .gray-bg{
   background: #F2F2F2
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
 }
 /*----------------------------------------*/
 /*      client-logo  CSS
@@ -351,51 +369,24 @@ body {
   font-size: 16px;
   text-transform: uppercase;
 }
-/*
-.section-title h2::before {
-  background: #f39c12 none repeat scroll 0 0;
-  bottom: -15px;
-  content: "";
-  height: 2px;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-}
-.section-title h2::after {
-  background: #2c3c50 none repeat scroll 0 0;
-  bottom: -15px;
-  content: "";
-  height: 1px;
-  left: 0;
-  opacity: 0.5;
-  position: absolute;
-  width: 100%;
-}
-.text-white .section-title h2::after{
-  background: #fff;
-}
-.section:hover .section-title h2::after{
-  opacity: 0;
-}
-.section:hover .section-title h2::before{
-  opacity: 1;
-}
 
-*/
 .single-service{
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .single-service .service-icon {
-  border: 2px solid;
-  border-radius: 4px;
   color: #2c3c50;
+  display: inline-block;
   float: left;
-  font-size: 38px;
-  height: 70px;
-  line-height: 65px;
+  font-size: 60px;
+  height: 64px;
+  line-height: 62px;
   text-align: center;
-  width: 70px;
+  width: 64px;
+}
+.single-service .service-icon.box {
+  border: 2px solid;
+  border-radius: 3px;
+  font-size: 36px;
 }
 .single-service .service-icon i{}
 .single-service .service-content {
@@ -404,11 +395,21 @@ body {
 }
 .single-service .service-content h3 {
   color: #2c3c50;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 28px;
 }
-.single-service .service-content p{}
-
+.single-service .service-content p {
+  font-size: 16px;
+}
+.single-service.icon-top .service-icon {
+  float: none;
+}
+.single-service.icon-top .service-icon.box {
+  margin-bottom: 20px
+}
+.single-service.icon-top .service-content {
+  margin-left: 0px;
+}
   /*----------------------------------------*/
   /*     call to action CSS
   /*----------------------------------------*/
@@ -543,9 +544,46 @@ body {
 }
 
 
+/*----------------------------------------*/
+/*     about  CSS
+/*----------------------------------------*/
+.section.about{
+  position: relative;
+}
+.section.about .image-large {
+  left: 0;
+  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+.about-content {
+  padding: 40px 0 40px 30px;
+}
+.about-content .about-title {
+  color: #363636;
+  font-size: 24px;
+}
+.about-content .block{}
+  .about-content .block .icon {
+    display: inline-block;
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+    width: 26px;
+    border-radius: 3px;
+    border: 1
+  }
 
-
-
+  .about-content .block h4 {
+    display: inline-block;
+    font-size: 16px;
+  }
+  .about-content  p {
+    font-size: 16px;
+  }
 
 
 
